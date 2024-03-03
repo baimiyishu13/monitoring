@@ -1,7 +1,7 @@
 ## 用法
 
 ```
-go run main.go -RobotKey="xxxxxx-xxxxx-xxxxx-xxxxxx-xxxxxxx"
+go run ain.go -RobotKey="xxxxxx-xxxxx-xxxxx-xxxxxx-xxxxxxx"
 ```
 
 ## configure
