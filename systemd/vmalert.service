@@ -1,0 +1,19 @@
+[Unit]
+Description=vmalert service
+After=network.target
+
+[Service]
+Type=simple
+User=vmalert
+Group=vmalert
+ExecStart=/usr/local/bin/vmalert-prod  -rule=/etc/ruler/*.yaml \
+        -datasource.url=http://localhost:8428 \
+        -notifier.url=http://localhost:9093 \
+        -remoteWrite.url=http://localhost:8428 \
+        -remoteRead.url=http://localhost:8428 \
+        -httpListenAddr=0.0.0.0:8080
+SyslogIdentifier=vmalert
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
