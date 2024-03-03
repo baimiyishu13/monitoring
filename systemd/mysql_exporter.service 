@@ -1,0 +1,11 @@
+[Unit]
+Description=mysql Exporter
+After=network.target
+
+[Service]
+User=mysql_exporter
+Group=mysql_exporter
+Type=simple
+ExecStart=/usr/local/bin/mysqld_exporter  --config.my-cnf="/root/mysqld_exporter-0.15.0.linux-amd64/.my.cnf"
+
+[Install]
