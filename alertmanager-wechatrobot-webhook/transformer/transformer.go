@@ -32,7 +32,7 @@ func TransformToMarkdown(notification model.Notification) (markdown *model.WeCha
 		buffer.WriteString(fmt.Sprintf("\n>【当前状态】%s \n", status))
 		buffer.WriteString(fmt.Sprintf("\n>【触发时间】 %s\n", alert.StartsAt.Format("2006-01-02 15:04:05")))
 		buffer.WriteString("\n [跳转Grafana看板](http://1.1.1.1:3000/dashboards)")
-		buffer.WriteString("\n @运维1 @运维2 ")
+		buffer.WriteString("\n @马乐乐 @彭勇 ")
 	}
 
 	markdown = &model.WeChatMarkdown{

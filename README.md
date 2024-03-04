@@ -11,3 +11,4 @@ go run ain.go -RobotKey="xxxxxx-xxxxx-xxxxx-xxxxxx-xxxxxxx"
 
  <img src="./images/README/image-20240303212359335.png"  width="50%" height="50%">
 
+https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=99cf40db-e0c7-4731-904b-d809cfb1570d
