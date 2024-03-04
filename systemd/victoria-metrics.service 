@@ -7,7 +7,7 @@ Type=simple
 LimitNOFILE=2097152
 User=victoriametrics
 Group=victoriametrics
-ExecStart=/usr/local/bin/victoria-metrics-prod --storageDataPath=/data/victoria-metrics
+ExecStart=/usr/local/bin/victoria-metrics-prod -storageDataPath="/data/victoria-metrics" -promscrape.config="/etc/victoriametrics/prometheus.yaml"
 SyslogIdentifier=victoriametrics
 Restart=always
 
